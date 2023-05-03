@@ -22,7 +22,7 @@ async function embedArray(gamesArr, interaction) {
         buildEmbed = new EmbedBuilder()
         .setColor(game.homeTeamHex)
         .setTitle(game.teams)
-        .setDescription(`${game.teams}. The overunder is : ${game.overUnder}, and the plus minus is ${game.teamOdds}`)
+        .setDescription(`${game.teams}. The overunder is : ${game.overUnder}, and the betting odds are ${game.teamOdds}`)
         .setThumbnail(game.homeTeamLogo)
         .addFields(
             { name : 'Home Team', value : game.homeTeamName, inline:true},
